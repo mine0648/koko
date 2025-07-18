@@ -181,23 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add typing effect to hero title
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const text = heroTitle.innerHTML;
-        heroTitle.innerHTML = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        
-        setTimeout(typeWriter, 500);
-    }
+    // Hero title is displayed normally without typing effect
 
     // Add random floating particles
     function createParticle() {
