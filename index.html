@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test - モダンなWebサイト制作サービス">
+    <meta name="keywords" content="ウェブサイト制作,ホームページ作成,Web開発,レスポンシブデザイン">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Test - モダンなWebサイト制作サービス">
+    <meta property="og:description" content="高品質でモダンなWebサイトを制作いたします。レスポンシブデザイン、最新技術を駆使したサイト構築。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
+    
+    <title>Test - モダンなWebサイト制作サービス</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Test</a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">ホーム</a>
+                <a href="#portfolio" class="nav-link">ポートフォリオ</a>
+                <a href="#services" class="nav-link">サービス</a>
+                <a href="#contact" class="nav-link">お問い合わせ</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ モダン & インタラクティブ</span>
+                </div>
+                <h1 class="hero-title">
+                    美しく機能的な<br>
+                    <span class="gradient-text">Webサイト</span>を<br>
+                    制作いたします
+                </h1>
+                <p class="hero-description">
+                    最新技術とクリエイティブなデザインで、あなたのビジネスを次のレベルへ。
+                    レスポンシブ対応、高パフォーマンス、SEO最適化されたサイトを提供します。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">作品を見る</a>
+                    <a href="#contact" class="btn btn-secondary">相談する</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <div class="card-icon">🎨</div>
+                        <h3>デザイン</h3>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card-icon">⚡</div>
+                        <h3>高速</h3>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card-icon">📱</div>
+                        <h3>レスポンシブ</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ポートフォリオ</h2>
+                <p class="section-description">これまでに制作したWebサイトの一部をご紹介します</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&h=400&fit=crop" alt="相川動物園サイト">
+                        <div class="portfolio-overlay">
+                            <h3>相川動物園</h3>
+                            <p>家族向け動物園の公式サイト</p>
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="DEPART Agencyサイト">
+                        <div class="portfolio-overlay">
+                            <h3>DEPART Agency</h3>
+                            <p>デザイン会社のコーポレートサイト</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Animation</span>
+                                <span>Modern CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop" alt="ドクターグリップサイト">
+                        <div class="portfolio-overlay">
+                            <h3>ドクターグリップシリーズ</h3>
+                            <p>PILOT製品の紹介サイト</p>
+                            <div class="portfolio-tags">
+                                <span>Product</span>
+                                <span>Timeline</span>
+                                <span>Interactive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">サービス</h2>
+                <p class="section-description">お客様のニーズに合わせた最適なソリューションを提供</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Webデザイン</h3>
+                    <p>ユーザー体験を重視したモダンで美しいデザインを制作。ブランドの個性を活かしたオリジナルデザインを提供します。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>フロントエンド開発</h3>
+                    <p>HTML、CSS、JavaScriptを使用した高品質なコーディング。レスポンシブ対応で全デバイスに最適化されたサイトを構築。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>パフォーマンス最適化</h3>
+                    <p>サイトの読み込み速度を向上させ、SEOに優れたWebサイトを制作。Core Web Vitalsに準拠した高速サイトを実現。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>レスポンシブ対応</h3>
+                    <p>スマートフォン、タブレット、デスクトップすべてのデバイスで最適な表示を実現。モバイルファーストなアプローチ。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">プロジェクトについてお気軽にご相談ください</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>一緒に素晴らしいWebサイトを作りましょう</h3>
+                    <p>あなたのアイデアを現実に変えるお手伝いをさせてください。まずはお気軽にご相談ください。</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>hello@test.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">💬</span>
+                            <span>お気軽にお声がけください</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="お名前" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="メールアドレス" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="メッセージ" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Test</h3>
+                    <p>モダンなWebサイト制作サービス</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">ホーム</a>
+                    <a href="#portfolio">ポートフォリオ</a>
+                    <a href="#services">サービス</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Test. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
