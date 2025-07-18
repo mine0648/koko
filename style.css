@@ -6,18 +6,18 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --dark-bg: #0f0f23;
-    --darker-bg: #050507;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0b8;
-    --border-color: rgba(255, 255, 255, 0.1);
-    --shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.4);
+    --primary-color: #2563eb;
+    --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    --secondary-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --accent-gradient: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    --dark-bg: #1f2937;
+    --darker-bg: #111827;
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.35);
 }
 
 body {
@@ -117,7 +117,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: radial-gradient(ellipse at center, rgba(102, 102, 234, 0.1) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
     position: relative;
     overflow: hidden;
 }
@@ -196,12 +196,12 @@ body {
 .btn-primary {
     background: var(--primary-gradient);
     color: white;
-    box-shadow: 0 8px 32px rgba(102, 102, 234, 0.3);
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.25);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(102, 102, 234, 0.4);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.35);
 }
 
 .btn-secondary {
@@ -409,7 +409,7 @@ section {
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow);
-    border-color: rgba(102, 102, 234, 0.3);
+    border-color: rgba(37, 99, 235, 0.25);
 }
 
 .service-icon {
@@ -503,7 +503,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(102, 102, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .form-group input::placeholder,

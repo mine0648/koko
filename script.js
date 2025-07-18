@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
         particle.style.position = 'fixed';
         particle.style.width = '4px';
         particle.style.height = '4px';
-        particle.style.background = 'rgba(102, 102, 234, 0.5)';
+        particle.style.background = 'rgba(59, 130, 246, 0.4)';
         particle.style.borderRadius = '50%';
         particle.style.pointerEvents = 'none';
         particle.style.zIndex = '1';
