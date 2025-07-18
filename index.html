@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test - モダンなWebサイト制作サービス">
-    <meta name="keywords" content="ウェブサイト制作,ホームページ作成,Web開発,レスポンシブデザイン">
+    <meta name="description" content="Test - プロフェッショナルなWebサイト制作サービス。企業の成長を加速させる戦略的Web制作">
+    <meta name="keywords" content="ウェブサイト制作,ホームページ作成,Web開発,レスポンシブデザイン,企業サイト">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Test - モダンなWebサイト制作サービス">
-    <meta property="og:description" content="高品質でモダンなWebサイトを制作いたします。レスポンシブデザイン、最新技術を駆使したサイト構築。">
+    <meta property="og:title" content="Test - プロフェッショナルなWebサイト制作サービス">
+    <meta property="og:description" content="企業の成長を加速させるプロフェッショナルなWebサイト制作。最先端の技術と戦略的デザインで、お客様のビジネス目標を実現。">
     <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
     
-    <title>Test - モダンなWebサイト制作サービス</title>
+    <title>Test - プロフェッショナルなWebサイト制作サービス</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Test</a>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">ホーム</a>
-                <a href="#portfolio" class="nav-link">ポートフォリオ</a>
-                <a href="#services" class="nav-link">サービス</a>
-                <a href="#contact" class="nav-link">お問い合わせ</a>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="#" class="company-logo">Test</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">ホーム</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">サービス</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">制作実績</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">お客様の声</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#contact" class="btn-quote">無料相談</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -38,96 +46,56 @@
                 <span></span>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span>モダン & インタラクティブ</span>
+                    <span>PROFESSIONAL WEB SOLUTIONS</span>
                 </div>
                 <h1 class="hero-title">
-                    美しく機能的な<br>
-                    <span class="gradient-text">Webサイト</span>を<br>
-                    制作いたします
+                    企業の成長を加速させる<br>
+                    <span class="gradient-text">プロフェッショナル</span><br>
+                    Webサイト制作
                 </h1>
                 <p class="hero-description">
-                    最新技術とクリエイティブなデザインで、あなたのビジネスを次のレベルへ。
-                    レスポンシブ対応、高パフォーマンス、SEO最適化されたサイトを提供します。
+                    最先端の技術と戦略的デザインで、お客様のビジネス目標を実現。<br>
+                    集客力向上、ブランディング強化、売上拡大をサポートいたします。
                 </p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">作品を見る</a>
-                    <a href="#contact" class="btn btn-secondary">相談する</a>
+                    <a href="#contact" class="btn btn-primary">無料相談を始める</a>
+                    <a href="#portfolio" class="btn btn-secondary">制作実績を見る</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">制作実績</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">顧客満足度</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">サポート体制</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-cards">
-                    <div class="card card-1">
-                        <div class="card-icon">DESIGN</div>
+                <div class="floating-elements">
+                    <div class="element element-1">
+                        <div class="element-icon">DESIGN</div>
                         <h3>デザイン</h3>
                     </div>
-                    <div class="card card-2">
-                        <div class="card-icon">FAST</div>
-                        <h3>高速</h3>
+                    <div class="element element-2">
+                        <div class="element-icon">DEVELOP</div>
+                        <h3>開発</h3>
                     </div>
-                    <div class="card card-3">
-                        <div class="card-icon">MOBILE</div>
-                        <h3>レスポンシブ</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">ポートフォリオ</h2>
-                <p class="section-description">これまでに制作したWebサイトの一部をご紹介します</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&h=400&fit=crop" alt="相川動物園サイト">
-                        <div class="portfolio-overlay">
-                            <h3>相川動物園</h3>
-                            <p>家族向け動物園の公式サイト</p>
-                            <div class="portfolio-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="DEPART Agencyサイト">
-                        <div class="portfolio-overlay">
-                            <h3>DEPART Agency</h3>
-                            <p>デザイン会社のコーポレートサイト</p>
-                            <div class="portfolio-tags">
-                                <span>React</span>
-                                <span>Animation</span>
-                                <span>Modern CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop" alt="ドクターグリップサイト">
-                        <div class="portfolio-overlay">
-                            <h3>ドクターグリップシリーズ</h3>
-                            <p>PILOT製品の紹介サイト</p>
-                            <div class="portfolio-tags">
-                                <span>Product</span>
-                                <span>Timeline</span>
-                                <span>Interactive</span>
-                            </div>
-                        </div>
+                    <div class="element element-3">
+                        <div class="element-icon">SUPPORT</div>
+                        <h3>サポート</h3>
                     </div>
                 </div>
             </div>
@@ -142,25 +110,174 @@
                 <p class="section-description">お客様のニーズに合わせた最適なソリューションを提供</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">DESIGN</div>
-                    <h3>Webデザイン</h3>
-                    <p>ユーザー体験を重視したモダンで美しいデザインを制作。ブランドの個性を活かしたオリジナルデザインを提供します。</p>
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <div class="service-icon">DESIGN</div>
+                        <h3>Webデザイン</h3>
+                        <span class="service-badge">人気</span>
+                    </div>
+                    <p>ユーザー体験を重視したモダンで美しいデザイン。ブランドの個性を活かしたオリジナルデザインを制作します。</p>
+                    <ul class="service-features">
+                        <li>UI/UXデザイン</li>
+                        <li>レスポンシブ対応</li>
+                        <li>ブランディング</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">CODE</div>
-                    <h3>フロントエンド開発</h3>
-                    <p>HTML、CSS、JavaScriptを使用した高品質なコーディング。レスポンシブ対応で全デバイスに最適化されたサイトを構築。</p>
+                    <div class="service-header">
+                        <div class="service-icon">CODE</div>
+                        <h3>フロントエンド開発</h3>
+                    </div>
+                    <p>HTML、CSS、JavaScriptを使用した高品質なコーディング。最新技術で高速・軽量なサイトを構築します。</p>
+                    <ul class="service-features">
+                        <li>モダンなコーディング</li>
+                        <li>パフォーマンス最適化</li>
+                        <li>アクセシビリティ対応</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">SPEED</div>
-                    <h3>パフォーマンス最適化</h3>
-                    <p>サイトの読み込み速度を向上させ、SEOに優れたWebサイトを制作。Core Web Vitalsに準拠した高速サイトを実現。</p>
+                    <div class="service-header">
+                        <div class="service-icon">SEO</div>
+                        <h3>SEO対策</h3>
+                    </div>
+                    <p>検索エンジンに優れたWebサイト制作。Core Web Vitalsに準拠した高速サイトで検索順位向上を実現します。</p>
+                    <ul class="service-features">
+                        <li>技術的SEO対策</li>
+                        <li>コンテンツ最適化</li>
+                        <li>パフォーマンス向上</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">RESPONSIVE</div>
-                    <h3>レスポンシブ対応</h3>
-                    <p>スマートフォン、タブレット、デスクトップすべてのデバイスで最適な表示を実現。モバイルファーストなアプローチ。</p>
+                    <div class="service-header">
+                        <div class="service-icon">SUPPORT</div>
+                        <h3>運用サポート</h3>
+                    </div>
+                    <p>公開後も安心の運用サポート。定期的なメンテナンス、セキュリティ対策、コンテンツ更新をサポートします。</p>
+                    <ul class="service-features">
+                        <li>定期メンテナンス</li>
+                        <li>セキュリティ対策</li>
+                        <li>24時間サポート</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お客様の声</h2>
+                <p class="section-description">実際にサービスをご利用いただいたお客様の声をご紹介します</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"期待を大きく上回るサイトを制作していただきました。おかげさまで新規顧客の獲得が150%向上しました。プロフェッショナルなチームに感謝しています。"</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">株式会社アルファテック</h4>
+                                <span class="client-position">代表取締役 田中様</span>
+                                <span class="project-date">2024.12.10 リリース</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"デザインから機能まで、すべてがプロフェッショナルです。特にSEO対策の効果が素晴らしく、検索順位が大幅に改善しました。継続的なサポートも心強いです。"</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">ベータコーポレーション</h4>
+                                <span class="client-position">マーケティング部長 佐藤様</span>
+                                <span class="project-date">2024.11.22 リリース</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"サポート体制が素晴らしく、公開後の運用も安心です。おかげさまでECサイトの売上が3倍になりました。投資以上のリターンを得られています。"</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">ガンマエンタープライズ</h4>
+                                <span class="client-position">EC部門責任者 鈴木様</span>
+                                <span class="project-date">2024.10.15 リリース</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">制作実績</h2>
+                <p class="section-description">様々な業界・規模のお客様のプロジェクトを手がけています</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&h=400&fit=crop" alt="相川動物園サイト">
+                        <div class="portfolio-overlay">
+                            <h3>相川動物園</h3>
+                            <p>家族向け動物園の公式サイト</p>
+                            <div class="portfolio-tags">
+                                <span>WordPress</span>
+                                <span>レスポンシブ</span>
+                                <span>多言語対応</span>
+                            </div>
+                            <div class="portfolio-results">
+                                <span>来園者数 +40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="DEPART Agencyサイト">
+                        <div class="portfolio-overlay">
+                            <h3>DEPART Agency</h3>
+                            <p>デザイン会社のコーポレートサイト</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>アニメーション</span>
+                                <span>ポートフォリオ</span>
+                            </div>
+                            <div class="portfolio-results">
+                                <span>問い合わせ +200%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop" alt="ドクターグリップサイト">
+                        <div class="portfolio-overlay">
+                            <h3>ドクターグリップシリーズ</h3>
+                            <p>PILOT製品の紹介サイト</p>
+                            <div class="portfolio-tags">
+                                <span>プロダクト</span>
+                                <span>インタラクティブ</span>
+                                <span>3D表現</span>
+                            </div>
+                            <div class="portfolio-results">
+                                <span>売上 +60%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,27 +293,61 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>一緒に素晴らしいWebサイトを作りましょう</h3>
-                    <p>あなたのアイデアを現実に変えるお手伝いをさせてください。まずはお気軽にご相談ください。</p>
+                    <p>お客様のビジネス目標の実現に向けて、最適なWeb戦略をご提案いたします。まずはお気軽にご相談ください。</p>
                     <div class="contact-methods">
                         <div class="contact-method">
                             <span class="contact-icon">EMAIL</span>
-                            <span>hello@test.com</span>
+                            <div class="contact-details">
+                                <span class="contact-label">メール</span>
+                                <span class="contact-value">hello@test.com</span>
+                            </div>
                         </div>
                         <div class="contact-method">
-                            <span class="contact-icon">CHAT</span>
-                            <span>お気軽にお声がけください</span>
+                            <span class="contact-icon">PHONE</span>
+                            <div class="contact-details">
+                                <span class="contact-label">電話</span>
+                                <span class="contact-value">03-1234-5678</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">TIME</span>
+                            <div class="contact-details">
+                                <span class="contact-label">営業時間</span>
+                                <span class="contact-value">平日 9:00-18:00</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="お名前" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">お名前 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">メールアドレス *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">ご予算</label>
+                            <select id="budget" name="budget">
+                                <option value="">選択してください</option>
+                                <option value="~50万円">~50万円</option>
+                                <option value="50万円~100万円">50万円~100万円</option>
+                                <option value="100万円~">100万円~</option>
+                                <option value="相談">相談</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="メールアドレス" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="メッセージ" rows="6" required></textarea>
+                        <label for="message">メッセージ *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="プロジェクトの詳細、ご要望などをお聞かせください" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">送信する</button>
                 </form>
@@ -210,13 +361,36 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Test</h3>
-                    <p>モダンなWebサイト制作サービス</p>
+                    <p>プロフェッショナルなWebサイト制作サービス</p>
+                    <div class="footer-contact">
+                        <p>〒100-0001 東京都千代田区千代田1-1-1</p>
+                        <p>TEL: 03-1234-5678 / EMAIL: hello@test.com</p>
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">ホーム</a>
-                    <a href="#portfolio">ポートフォリオ</a>
-                    <a href="#services">サービス</a>
-                    <a href="#contact">お問い合わせ</a>
+                    <div class="footer-column">
+                        <h4>サービス</h4>
+                        <ul>
+                            <li><a href="#services">Webデザイン</a></li>
+                            <li><a href="#services">フロントエンド開発</a></li>
+                            <li><a href="#services">SEO対策</a></li>
+                            <li><a href="#services">運用サポート</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>実績</h4>
+                        <ul>
+                            <li><a href="#portfolio">制作実績</a></li>
+                            <li><a href="#testimonials">お客様の声</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="#contact">無料相談</a></li>
+                            <li><a href="#contact">見積もり依頼</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
