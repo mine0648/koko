@@ -265,8 +265,11 @@ body {
 }
 
 .card-icon {
-    font-size: 32px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 12px;
+    color: var(--primary-color);
 }
 
 .card h3 {
@@ -410,9 +413,12 @@ section {
 }
 
 .service-icon {
-    font-size: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 20px;
     display: block;
+    color: var(--primary-color);
 }
 
 .service-card h3 {
@@ -463,7 +469,10 @@ section {
 }
 
 .contact-icon {
-    font-size: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color);
 }
 
 .contact-form {
