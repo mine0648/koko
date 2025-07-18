@@ -131,13 +131,173 @@ h3 {
 .company-logo {
     font-size: 28px;
     font-weight: 800;
-    color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
 }
 
-.company-logo:hover {
+/* Noise Effect Logo */
+.logo-text {
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.noise-effect {
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+.noise-effect::before,
+.noise-effect::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.noise-effect::before {
+    animation: noise-1 0.3s infinite linear alternate-reverse;
+    color: #ff0040;
+    z-index: -1;
+}
+
+.noise-effect::after {
+    animation: noise-2 0.3s infinite linear alternate-reverse;
+    color: #00ff40;
+    z-index: -2;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-1px, 1px);
+    }
+    40% {
+        transform: translate(-1px, -1px);
+    }
+    60% {
+        transform: translate(1px, 1px);
+    }
+    80% {
+        transform: translate(1px, -1px);
+    }
+}
+
+@keyframes noise-1 {
+    0% {
+        transform: translate(1px, -1px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(-1px, 1px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(0px, -1px);
+        opacity: 0.7;
+    }
+}
+
+@keyframes noise-2 {
+    0% {
+        transform: translate(-1px, 1px);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(1px, -1px);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(-1px, 0px);
+        opacity: 0.5;
+    }
+}
+
+/* Hover Effects */
+.company-logo:hover .logo-text {
+    animation-duration: 0.1s;
     color: var(--primary-dark);
+}
+
+.company-logo:hover .noise-effect::before {
+    animation-duration: 0.1s;
+}
+
+.company-logo:hover .noise-effect::after {
+    animation-duration: 0.1s;
+}
+
+/* Alternative Static Noise Background */
+.logo-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(37, 99, 235, 0.03) 2px,
+            rgba(37, 99, 235, 0.03) 4px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(37, 99, 235, 0.03) 2px,
+            rgba(37, 99, 235, 0.03) 4px
+        );
+    animation: noise-bg 20s infinite linear;
+    pointer-events: none;
+    z-index: -3;
+}
+
+@keyframes noise-bg {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -5%);
+    }
+    20% {
+        transform: translate(-10%, 5%);
+    }
+    30% {
+        transform: translate(5%, -10%);
+    }
+    40% {
+        transform: translate(-5%, 15%);
+    }
+    50% {
+        transform: translate(-10%, 5%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(-15%, 10%);
+    }
+    90% {
+        transform: translate(10%, -5%);
+    }
+    100% {
+        transform: translate(5%, 0%);
+    }
 }
 
 .main-nav {

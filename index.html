@@ -26,7 +26,9 @@
     <header class="main-header">
         <div class="header-container">
             <div class="logo-area">
-                <a href="#" class="company-logo">Test</a>
+                <a href="#" class="company-logo">
+                    <span class="logo-text noise-effect" data-text="Test">Test</span>
+                </a>
             </div>
             <nav class="main-nav">
                 <ul class="nav-list">
@@ -282,6 +284,122 @@
             </div>
         </div>
     </section>
+
+    <!-- AI Assistant Section -->
+    <section id="ai-assistant" class="ai-assistant">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI制作アシスタント</h2>
+                <p class="section-description">AIがあなたの理想的なWebサイトづくりをサポートします</p>
+            </div>
+            <div class="ai-features-grid">
+                <div class="ai-feature-card">
+                    <div class="ai-feature-icon">💬</div>
+                    <h3>AIチャットボット</h3>
+                    <p>24時間いつでもサイト制作の相談ができます。要件定義から技術的な質問まで、AIがサポート。</p>
+                    <button class="btn btn-secondary ai-chat-btn">チャットを開始</button>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="ai-feature-icon">💰</div>
+                    <h3>自動見積もり</h3>
+                    <p>プロジェクトの要件を入力するだけで、AIが適正価格を瞬時に算出。予算計画が立てやすくなります。</p>
+                    <button class="btn btn-secondary" onclick="openEstimator()">見積もり開始</button>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="ai-feature-icon">🎨</div>
+                    <h3>デザイン提案</h3>
+                    <p>業界やブランドイメージに基づいて、AIが最適なカラーパレットとレイアウトを提案します。</p>
+                    <button class="btn btn-secondary" onclick="openDesignTool()">デザイン提案</button>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="ai-feature-icon">📝</div>
+                    <h3>コンテンツ生成</h3>
+                    <p>キャッチコピーや商品説明文をAIが自動生成。SEOに最適化された文章で集客力をアップ。</p>
+                    <button class="btn btn-secondary" onclick="openContentGenerator()">文章生成</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Widget -->
+    <div id="ai-chat-widget" class="ai-chat-widget">
+        <div class="ai-chat-header">
+            <span class="ai-chat-title">🤖 AI制作アシスタント</span>
+            <button class="ai-chat-close" onclick="closeAIChat()">&times;</button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages">
+            <div class="ai-message">
+                <div class="ai-avatar">🤖</div>
+                <div class="ai-text">こんにちは！Webサイト制作のご相談はお任せください。どんなサイトを作りたいですか？</div>
+            </div>
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="ai-chat-input" placeholder="メッセージを入力してください..." onkeypress="handleAIChatKeyPress(event)">
+            <button onclick="sendAIMessage()">送信</button>
+        </div>
+    </div>
+
+    <!-- AI Estimator Modal -->
+    <div id="ai-estimator-modal" class="ai-modal">
+        <div class="ai-modal-content">
+            <div class="ai-modal-header">
+                <h3>🤖 AI自動見積もり</h3>
+                <button class="ai-modal-close" onclick="closeEstimator()">&times;</button>
+            </div>
+            <div class="ai-modal-body">
+                <div class="estimator-form">
+                    <div class="form-group">
+                        <label>サイトの種類</label>
+                        <select id="site-type">
+                            <option value="corporate">コーポレートサイト</option>
+                            <option value="ecommerce">ECサイト</option>
+                            <option value="portfolio">ポートフォリオ</option>
+                            <option value="blog">ブログ</option>
+                            <option value="landing">ランディングページ</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>ページ数</label>
+                        <select id="page-count">
+                            <option value="1-5">1-5ページ</option>
+                            <option value="6-10">6-10ページ</option>
+                            <option value="11-20">11-20ページ</option>
+                            <option value="21+">21ページ以上</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>必要な機能</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="cms"> CMS導入</label>
+                            <label><input type="checkbox" value="seo"> SEO対策</label>
+                            <label><input type="checkbox" value="responsive"> レスポンシブ</label>
+                            <label><input type="checkbox" value="animation"> アニメーション</label>
+                            <label><input type="checkbox" value="form"> お問い合わせフォーム</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="calculateEstimate()">見積もり算出</button>
+                </div>
+                <div id="estimate-result" class="estimate-result" style="display: none;">
+                    <h4>💰 見積もり結果</h4>
+                    <div class="estimate-breakdown">
+                        <div class="estimate-item">
+                            <span>基本制作費</span>
+                            <span id="base-cost">¥0</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span>機能追加費</span>
+                            <span id="feature-cost">¥0</span>
+                        </div>
+                        <div class="estimate-item total">
+                            <span>合計見積もり</span>
+                            <span id="total-cost">¥0</span>
+                        </div>
+                    </div>
+                    <p class="estimate-note">※この見積もりはAIによる概算です。正確な見積もりはお問い合わせください。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
